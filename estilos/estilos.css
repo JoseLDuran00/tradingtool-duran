@@ -225,6 +225,22 @@ footer p {
   display: flex;
   justify-content: center;
   padding: 10px;
+  margin: 10px;
+}
+
+.movil{
+  width: 40px;
+  transform: rotate(40deg);
+  right: 30%;
+  
+}
+.movil-texto{
+  display: flex;
+  flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 /* fin footer */
