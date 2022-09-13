@@ -320,25 +320,42 @@ footer p {
     "img texto";
     align-content: center;
     align-items: center;
+    justify-items: center;
     border: #003865 1px solid;
     margin: 5px;
-    border-radius: 5px;
+    border-radius: 10px;
+    
+    background: url(../images/imagen-fondo.png) no-repeat;
+    background-size: cover;
+
 }
 
 .patrones-titulo{
-  grid-area: titulo1;
   font-family: 'Crimson Text', serif;
   color: #003865;
   padding: 20px;
  
+  
 }
 
-.titulo-patrones { 
+.subtitulo-patrones { 
   grid-area: titulo; 
+  font-family: 'Crimson Text', serif;
+  color: #003865;
+
+  text-decoration: overline underline;
+  text-shadow: 2px 2px 2px rgba(224, 219, 219, 0.534);
+  font-size: 1.1em;
 }
 
 .texto-patrones { 
   grid-area: texto; 
+  background-color: #DBDFFD;
+  box-shadow: 10px 10px 25px #242424;
+  padding: 10px;
+  margin: 10px;
+  color : #003865;
+ 
   
 }
 
@@ -348,6 +365,8 @@ footer p {
   grid-area: img;
   border: #fff 1px solid;
   border-radius: 2px;
+
+
 }
 
 /* -------- */

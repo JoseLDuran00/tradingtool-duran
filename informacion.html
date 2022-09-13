@@ -15,6 +15,11 @@
   <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- WOW CSS-->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   <!-- CSS stylesheet -->
   <link rel="stylesheet" href="./estilos/estilos.css">
 </head>
@@ -56,7 +61,7 @@
       
       
       <div id="patrones-graficos" class="patrones-container">
-        <div class="titulo-patrones" >
+        <div class="subtitulo-patrones wow animate__animated animate__fadeInUp"  >
           <h3>Doble Techo</h3>
         </div>
         <div class="patrones-img" data-aos="fade-up">
@@ -73,7 +78,7 @@
       </div>
      
       <div id="patrones-graficos" class="patrones-container">
-        <div class="titulo-patrones">
+        <div class="subtitulo-patrones wow animate__animated animate__fadeIn">
           <h3>Doble Piso</h3>
         </div>
         <div class="patrones-img" data-aos="flip-left">
@@ -90,7 +95,7 @@
       </div>
       
       <div id="patrones-graficos" class="patrones-container">
-        <div class="titulo-patrones">
+        <div class="subtitulo-patrones wow animate__animated animate__fadeInLeft">
           <h3>Hombro Cabeza Hombro</h3>
         </div>
         <div class="patrones-img" data-aos="flip-up">
@@ -107,7 +112,7 @@
       </div>
       
       <div id="patrones-graficos" class="patrones-container">
-        <div class="titulo-patrones">
+        <div class="subtitulo-patrones wow animate__animated animate__fadeInRight">
           <h3>Triángulo Ascendente</h3>
         </div>
         <div class="patrones-img" data-aos="fade-right">
@@ -124,7 +129,7 @@
       </div>
       
       <div id="patrones-graficos" class="patrones-container">
-        <div class="titulo-patrones">
+        <div class="subtitulo-patrones wow animate__animated animate__fadeInDown">
           <h3>Triángulo Simétrico</h3>
         </div>
         <div class="patrones-img" data-aos="fade-right"><img class="patrones-img" src="./images/symmetrical-triangle.png" alt="triangulo-simetrico"></div>
@@ -167,6 +172,11 @@
     </div>
   </footer>
   <script> AOS.init({   easing: 'ease-out-back',duration: 1000}) </script>
+  <script src="./js/wow.min.js"></script>
+<script>
+   new WOW().init();
+</script>
+
 
 </body>
 
