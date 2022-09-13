@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suscríbete</title>
+  <!--Favicon -->
+  <link rel="icon" href="./images/favicon-16x16.png">
+
+  <!-- Fuentes de Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Montserrat&display=swap" rel="stylesheet">
+  <!-- CSS stylesheet -->
+  <link rel="stylesheet" href="./estilos/estilos.css">
+</head>
+
+<body class="ancho">
+  <header>
+    <!-- Nav Bar -->
+    <nav>
+        <a href="./index.html">
+          <img class="logo" src="./images/logo_100_80.png" alt="logo">
+        </a>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="calendario.html">Calendario</a>
+        </li>
+        <li>
+          <a href="graficos.html">Gráficos</a>
+        </li>
+        <li>
+          <a href="informacion.html">Informacíon</a>
+        </li>
+        <li>
+          <a href="suscribete.html">Suscríbete</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Inicio Main -->
+  <main>
+    <section id="suscribete">
+      <div class="formulario">
+        <form action="">
+          <fieldset>
+            <legend> Suscribete a Nuestro Boletín de Noticias.</legend>
+  
+            <div class="datos-personales">
+              <label for="nombre">Nombre :</label>
+              <input type="text" name="nombre" placeholder="Avelino Pancracio" required>
+              
+              <label for="email">Email :</label>
+              <input type="email" name="email" required>
+            </div>
+
+            <div>
+              <p>Te gustaria recibir información sobre : </p>
+              <div class="opciones">
+                <input type="checkbox" name="forex" value="forex">
+                <label for="forex">Forex</label>
+              </div>
+              <div class="opciones">
+                <input type="checkbox" name="indices" value="indices">
+                <label for="indices">Indices</label>
+              </div>
+                
+              <div class="opciones">
+                <input type="checkbox" name="materiasPrimas" value="materiasPrimas">
+                <label for="materiasPrimas">Materias Primas</label>
+              </div>
+                
+              <div class="opciones">
+                <input type="checkbox" name="crypto" value="crypto">
+                <label for="crypto">Crypto</label>
+              </div>
+            </div>
+            
+            <div class="btn">
+              <input class="btn-enviar" type="submit" name="enviar" value="  Enviar  ">
+            </div>
+  
+          </fieldset>
+        </form>
+      </div>
+      
+    </section>
+
+  </main>
+  <!-- Fin Main -->
+
+  <!-- Footer -->
+  
+  <footer>
+    <div>
+      <p> Puedes seguirnos en :</p>
+      <div class="container">
+        <a href="#">
+          <img class="social-logo" src="./images/facebook.png" alt="facebook">
+        </a>
+
+        <a href="#">
+          <img class="social-logo" src="./images/twitter.png" alt="twitter">
+        </a>
+
+        <a href="#">
+          <img class="social-logo" src="./images/instagram.png" alt="instagram">
+        </a>
+      </div>
+      <p>© Copyright TradingTools</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

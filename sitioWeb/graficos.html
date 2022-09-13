@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gráficos</title>
+  <!--Favicon -->
+  <link rel="icon" href="./images/favicon-16x16.png">
+
+  <!-- Fuentes de Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Montserrat&display=swap" rel="stylesheet">
+  <!-- CSS stylesheet -->
+  <link rel="stylesheet" href="./estilos/estilos.css">
+</head>
+
+<body class="ancho">
+  <header>
+    <!-- Nav Bar -->
+    <nav>
+        <a href="./index.html">
+          <img class="logo" src="./images/logo_100_80.png" alt="logo">
+        </a>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="calendario.html">Calendario</a>
+        </li>
+        <li>
+          <a href="graficos.html">Gráficos</a>
+        </li>
+        <li>
+          <a href="informacion.html">Informacíon</a>
+        </li>
+        <li>
+          <a href="suscribete.html">Suscríbete</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Inicio Main -->
+  <main>
+    <div class="grafico-tradingview">
+      <div class="grafico-titulo">
+          <h1>Gráfico Técnico</h1>
+      </div>
+      <div class="area-grafico">
+
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div id="tradingview_91540"></div>
+          <div class="tradingview-widget-copyright">
+            <a href="https://es.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener" target="_blank"><span class="blue-text">AAPL Gráfico</span></a> por TradingView
+          </div>
+          <script type="text/javascript" src="https://s3.tradingview.com/tv.js">
+          </script>
+          <script type="text/javascript">
+          new TradingView.widget(
+          {
+          "autosize": true,
+          "width": "100%",
+          "height": "100%",
+          "symbol": "OANDA:XAUUSD",
+          "interval": "D",
+          "timezone": "America/Argentina/Buenos_Aires",
+          "theme": "dark",
+          "style": "1",
+          "locale": "es",
+          "toolbar_bg": "#f1f3f6",
+          "enable_publishing": false,
+          "allow_symbol_change": true,
+          "container_id": "tradingview_91540",
+          "show_popup_button": true,
+        }
+          );
+          </script>
+        </div>
+        <!-- TradingView Widget END -->
+
+      </div>
+    </div>
+
+
+  </main>
+  <!-- Fin Main -->
+
+  <!-- Footer -->
+  
+  <footer>
+    <div>
+      <p> Puedes seguirnos en :</p>
+      <div class="container">
+        <a href="#">
+          <img class="social-logo" src="./images/facebook.png" alt="facebook">
+        </a>
+
+        <a href="#">
+          <img class="social-logo" src="./images/twitter.png" alt="twitter">
+        </a>
+
+        <a href="#">
+          <img class="social-logo" src="./images/instagram.png" alt="instagram">
+        </a>
+      </div>
+
+      
+      <p>© Copyright TradingTools</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

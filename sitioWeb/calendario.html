@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendario</title>
+  <!--Favicon -->
+  <link rel="icon" href="./images/favicon-16x16.png">
+
+  <!-- Fuentes de Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Montserrat&display=swap" rel="stylesheet">
+  <!-- CSS stylesheet -->
+  <link rel="stylesheet" href="./estilos/estilos.css">
+</head>
+
+<body class="ancho">
+  <header>
+    <!-- Nav Bar -->
+    <nav>
+      <a href="./index.html">
+        <img class="logo" src="./images/logo_100_80.png" alt="logo">
+      </a>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="calendario.html">Calendario</a>
+        </li>
+        <li>
+          <a href="graficos.html">Gráficos</a>
+        </li>
+        <li>
+          <a href="informacion.html">Informacíon</a>
+        </li>
+        <li>
+          <a href="suscribete.html">Suscríbete</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Inicio Main -->
+  <main>
+    <section id="calendario" class="titulo calendario ">
+
+      <h1>Calendario de Eventos Económicos</h1>
+      <div class="cal-economico">
+
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://es.tradingview.com/markets/currencies/economic-calendar/" rel="noopener" target="_blank"><span class="blue-text">Calendario económico</span></a> por TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-events.js" async>
+            {
+              "width": "100%",
+              "height": "100%",
+              "colorTheme": "dark",
+              "isTransparent": false,
+              "locale": "es",
+              "importanceFilter": "-1,0,1"
+            }
+          </script>
+        </div>
+        <!-- TradingView Widget END -->
+   
+      </section>
+  </main>
+  <!-- Fin Main -->
+
+  <!-- Footer -->
+
+  <footer>
+    <div>
+      <p> Puedes seguirnos en :</p>
+      <div class="container">
+        <a href="#">
+          <img class="social-logo" src="./images/facebook.png" alt="facebook">
+        </a>
+
+        <a href="#">
+          <img class="social-logo" src="./images/twitter.png" alt="twitter">
+        </a>
+
+        <a href="#">
+          <img class="social-logo" src="./images/instagram.png" alt="instagram">
+        </a>
+      </div>
+
+
+      <p>© Copyright TradingTools</p>
+    </div>
+  </footer>
+</body>
+
+</html>
