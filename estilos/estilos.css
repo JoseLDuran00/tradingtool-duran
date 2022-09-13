@@ -309,7 +309,6 @@ footer p {
   padding: 20px;
 }
 
-
 .patrones-container {  
   display: grid;
   grid-template-columns: auto auto;
@@ -317,9 +316,9 @@ footer p {
   gap: 2px 10px;
   grid-auto-flow: row;
   grid-template-areas:
-    "titulo titulo"
+    "img titulo"
     "img texto";
-    align-content: space-around;
+    align-content: center;
     align-items: center;
     border: #003865 1px solid;
     margin: 5px;
@@ -344,10 +343,10 @@ footer p {
 }
 
 .patrones-img {
-  width: 200px;
-  height: 150px;
+  width: 400px;
+  height: 300px;
   grid-area: img;
-  border: #0070cc 1px solid;
+  border: #fff 1px solid;
   border-radius: 2px;
 }
 

@@ -12,6 +12,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Montserrat&display=swap" rel="stylesheet">
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- CSS stylesheet -->
   <link rel="stylesheet" href="./estilos/estilos.css">
 </head>
@@ -53,13 +56,13 @@
       
       
       <div id="patrones-graficos" class="patrones-container">
-        <div class="titulo-patrones">
+        <div class="titulo-patrones" >
           <h3>Doble Techo</h3>
         </div>
-        <div class="patrones-img">
+        <div class="patrones-img" data-aos="fade-up">
           <img class="patrones-img " src="./images/double-top.png" alt="double-top">
         </div>
-        <div class="texto-patrones">
+        <div class="texto-patrones" data-aos="fade-down">
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus similique recusandae, ad suscipit
             pariatur, qui animi architecto quam fugit consectetur et cum sit quasi inventore excepturi
             impedit perspiciatis velit repellat? Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -73,10 +76,10 @@
         <div class="titulo-patrones">
           <h3>Doble Piso</h3>
         </div>
-        <div class="patrones-img">
+        <div class="patrones-img" data-aos="flip-left">
           <img class="patrones-img " src="./images/double-bottom.png" alt="double-bottom">
         </div>
-        <div class="texto-patrones">
+        <div class="texto-patrones" data-aos="zoom-in-left">
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus similique recusandae, ad suscipit
             pariatur, qui animi architecto quam fugit consectetur et cum sit quasi inventore excepturi
             impedit perspiciatis velit repellat? Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -90,10 +93,10 @@
         <div class="titulo-patrones">
           <h3>Hombro Cabeza Hombro</h3>
         </div>
-        <div class="patrones-img">
+        <div class="patrones-img" data-aos="flip-up">
           <img class="patrones-img" src="./images/head-and-shoulders.png" alt="hch">
         </div>
-        <div class="texto-patrones">
+        <div class="texto-patrones" data-aos="flip-down">
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus similique recusandae, ad suscipit
             pariatur, qui animi architecto quam fugit consectetur et cum sit quasi inventore excepturi
             impedit perspiciatis velit repellat? Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -107,10 +110,10 @@
         <div class="titulo-patrones">
           <h3>Triángulo Ascendente</h3>
         </div>
-        <div class="patrones-img">
+        <div class="patrones-img" data-aos="fade-right">
           <img class="patrones-img" src="./images/ascending-triangle.png " alt="triangulo-ascendente">
         </div>
-        <div class="texto-patrones">
+        <div class="texto-patrones" data-aos="fade-down">
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus similique recusandae, ad suscipit
             pariatur, qui animi architecto quam fugit consectetur et cum sit quasi inventore excepturi
             impedit perspiciatis velit repellat? Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -124,9 +127,9 @@
         <div class="titulo-patrones">
           <h3>Triángulo Simétrico</h3>
         </div>
-        <div class="patrones-img"><img class="patrones-img" src="./images/symmetrical-triangle.png" alt="triangulo-simetrico"></div>
+        <div class="patrones-img" data-aos="fade-right"><img class="patrones-img" src="./images/symmetrical-triangle.png" alt="triangulo-simetrico"></div>
 
-        <div class="texto-patrones">
+        <div class="texto-patrones" data-aos="fade-left">
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus similique recusandae, ad suscipit
             pariatur, qui animi architecto quam fugit consectetur et cum sit quasi inventore excepturi
             impedit perspiciatis velit repellat? Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -163,6 +166,7 @@
       <p>© Copyright TradingTools</p>
     </div>
   </footer>
+  <script> AOS.init({   easing: 'ease-out-back',duration: 1000}) </script>
 
 </body>
 
