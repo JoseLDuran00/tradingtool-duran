@@ -624,8 +624,8 @@ input{
   .grafico-diario-img {
 
     width: 75vw;
-    max-width: 400px;
-    min-width: 280px;
+    max-width: 300px;
+    min-width: 200px;
     margin: auto;
     padding: 20px 10px ;
   }
