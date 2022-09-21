@@ -9,6 +9,9 @@
   <!--Favicon -->
   <link rel="icon" href="./images/favicon-16x16.png">
 
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
   <!-- Fuentes de Google -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,44 +52,50 @@
     <section id="suscribete">
       <div class="formulario">
         <form action="">
-          <fieldset>
-            <legend> Suscribete a Nuestro Boletín de Noticias.</legend>
-  
-            <div class="datos-personales">
-              <label for="nombre">Nombre :</label>
-              <input type="text" name="nombre" placeholder="Avelino Pancracio" required>
-              
-              <label for="email">Email :</label>
-              <input type="email" name="email" required>
-            </div>
-
-            <div>
-              <p>Te gustaria recibir información sobre : </p>
-              <div class="opciones">
-                <input type="checkbox" name="forex" value="forex">
-                <label for="forex">Forex</label>
-              </div>
-              <div class="opciones">
-                <input type="checkbox" name="indices" value="indices">
-                <label for="indices">Indices</label>
-              </div>
+          <!-- <fieldset> -->
+            <!-- <legend class="row"> Suscribete a Nuestro Boletín de Noticias.</legend> -->
+            <h2 class="formulario-titulo">
+              Suscribete a Nuestro Boletín de Noticias.
+            </h2>
+            
+            <div class="row ">
+              <div class="col-10 datos-personales">
+                <label for="nombre" class="form-label">Nombre :</label>
+                <input type="text" class="form-control" name="nombre" placeholder="Escribe tu nombre" required>
                 
-              <div class="opciones">
-                <input type="checkbox" name="materiasPrimas" value="materiasPrimas">
-                <label for="materiasPrimas">Materias Primas</label>
-              </div>
-                
-              <div class="opciones">
-                <input type="checkbox" name="crypto" value="crypto">
-                <label for="crypto">Crypto</label>
+                <label for="email" class="form-label">Email :</label>
+                <input type="email" class="form-control" name="email" placeholder="Escribe tu email" required>
               </div>
             </div>
             
-            <div class="btn">
-              <input class="btn-enviar" type="submit" name="enviar" value="  Enviar  ">
+
+            <div class="row">
+              <p>Te gustaria recibir información sobre : </p>
+              <div class=" col-10 opciones">
+                <input class="form-check-input" type="checkbox" name="forex" value="forex">
+                <label class="form-check-label" for="forex">Forex</label>
+              </div>
+              <div class="opciones">
+                <input class="form-check-input" type="checkbox" name="indices" value="indices">
+                <label class="form-check-label" for="indices">Indices</label>
+              </div>
+                
+              <div class="opciones">
+                <input class="form-check-input" type="checkbox" name="materiasPrimas" value="materiasPrimas">
+                <label class="form-check-label" for="materiasPrimas">Materias Primas</label>
+              </div>
+                
+              <div class="opciones">
+                <input class="form-check-input" type="checkbox" name="crypto" value="crypto">
+                <label class="form-check-label" for="crypto">Crypto</label>
+              </div>
+            </div>
+            
+            <div class="boton row">
+              <input class="btn btn-enviar" type="submit" name="enviar" value=" Enviar ">
             </div>
   
-          </fieldset>
+          <!-- </fieldset> -->
         </form>
       </div>
       
@@ -116,6 +125,9 @@
       <p>© Copyright TradingTools</p>
     </div>
   </footer>
+
+  <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
 </body>
 
