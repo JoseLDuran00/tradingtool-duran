@@ -24,7 +24,10 @@ body {
     "footer footer footer footer";
 }
 
-.header { grid-area: header; }
+.header { 
+  grid-area: header; 
+  }
+  
 
 .img { 
   grid-area: img; 
@@ -54,22 +57,32 @@ body {
 }
 
 /* Menu Navegación  */
+.color-nav{
+  background-color:  #F9F5EB;
+}
+
 nav {
   padding: 1rem;
   background-color: #1C3879;
   display: flex;
 }
 
-nav ul {
+nav ul{
+  display: flex;
+  align-items: center;
+  
+}
+
+/* nav ul {
   list-style: none;
   background-color: #1C3879;
   width: 90%;
   height: 80px;
   display: flex;
-  /* justify-content: flex-end; */
+  justify-content: flex-end; 
  align-items: center; 
  flex-wrap: wrap
-}
+} */
 
 nav ul li a {
   font-family: 'Montserrat', sans-serif;
