@@ -66,8 +66,9 @@ nav ul {
   width: 90%;
   height: 80px;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  /* justify-content: flex-end; */
+ align-items: center; 
+ flex-wrap: wrap
 }
 
 nav ul li a {
@@ -503,9 +504,9 @@ form{
         "footer footer ";
     }
 
-    nav ul{
+    /* nav ul{
       display: block;
-    }
+    } */
     .titulo-img{
       display: flex;
       justify-content: space-around;
