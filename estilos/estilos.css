@@ -224,7 +224,7 @@ footer p {
     box-shadow: 0px 0px 5px 3px rgba(100,111,212,1);
 }
 
-.container {
+.contenedor {
   display: flex;
   justify-content: center;
   padding: 10px;
@@ -514,6 +514,10 @@ form{
       justify-content: space-around;
       padding: 15px;
     }
+    .grafico-diario-img{
+      width: 80%;
+      height: 20%;
+    }
 
     .noticia-contenedor{
       display: flex;
@@ -597,6 +601,19 @@ form{
       box-shadow: 1px 0px 10px 5px #646FD4;
       -webkit-box-shadow:1px 0px 10px 5px #646FD4;
     }
+
+    .movil-texto {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+  }
+
+  .movil {
+    width: 25px;
+  }
 }
 
 @media only screen and (max-width:850px){
@@ -636,8 +653,8 @@ form{
   }
   .grafico-diario-img {
 
-    width: 75vw;
-    max-width: 300px;
+    width: 85vw;
+    max-width: 80%;
     min-width: 200px;
     margin: auto;
     padding: 20px 10px ;
