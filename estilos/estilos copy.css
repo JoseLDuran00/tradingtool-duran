@@ -96,7 +96,7 @@ nav ul li a:hover {
 }
 
 /* seccion .grafico-diario */
-.grafico-diario {
+.grafico-diario { /* ok*/
   background-color: #DBDFFD;
   display: flex;
   flex-direction: column;
@@ -112,7 +112,7 @@ nav ul li a:hover {
     padding: 10px;
 }
 
-.grafico-diario-img {
+.grafico-diario-img { /*ok*/
 
   width: 75vw;
   max-width: 600px;
@@ -135,7 +135,7 @@ box-shadow: 0px 3px 5px rgba(15,15,15,.3);
 }
 
 
-.grafico-diario-text {
+.grafico-diario-text { /*ok*/
   font-family: 'Crimson Text', serif;
   color: #003865;
   padding: 20px;
@@ -151,14 +151,14 @@ box-shadow: 0px 3px 5px rgba(15,15,15,.3);
   border-radius: 2px;
 }
 
-.cuadro{
+.cuadro{/*ok*/
   border: 1px #fff solid;
   border-radius: 10px;
   margin: 5px;
   color: #003865;
 }
 
-.noticias h2,h3 {
+.noticias h2,h3 { /*ok*/
   font-family: 'Crimson Text', serif;
   color: #003865;
   margin-left: 20px;
@@ -173,13 +173,13 @@ box-shadow: 0px 3px 5px rgba(15,15,15,.3);
 
 }
 
-.noticia-contenedor{
+.noticia-contenedor{ /*ok*/
   display: flex;
   justify-content: space-between;
   padding: 10px;
 }
 
-.noticias-flex {
+.noticias-flex { /*ok*/
   font-family: 'Crimson Text', serif;
   display: flex;
   justify-content: space-around;
