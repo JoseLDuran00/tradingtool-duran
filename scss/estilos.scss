@@ -13,7 +13,10 @@
   @import 'componentes/menu-navegacion';
 
   @import 'componentes/index';
+
+  @import 'componentes/calendario';
   
+
   .ancho {
     position: relative;
     margin: 0 auto;
@@ -74,28 +77,6 @@
   
   /* fin footer */
   
-  /* Página calendario.html*/
-  .calendario{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #DBDFFD;
-    padding-bottom: 15px;
-  }
-  
-  .calendario h1{
-    padding: 20px;
-    margin-bottom: 5px;
-    font-family: 'Crimson Text', serif;
-    color: #003865;
-    
-  }
-  
-  .cal-economico{
-    width: 60%;
-    height: 500px;
-  
-  }
   
   /*Página graficos.html*/
   .grafico-tradingview {  
