@@ -5,9 +5,13 @@
   box-sizing: border-box; }
 
 body {
-  /* background-color: #2b4865;
-      background-image: linear-gradient(180deg, #2b4865 0%, #256d85 50%, #2B86C5 100%); */
   background: url(../images/pyramid.png); }
+
+.ancho {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  width: 90%; }
 
 /* Menu Navegación  */
 .color-nav {
@@ -125,7 +129,7 @@ nav {
   grid-area: footer; }
 
 /* -- Fin estilos index.html --*/
-/* Página calendario.html*/
+/* --  Página calendario.html -- */
 .calendario {
   display: flex;
   flex-direction: column;
@@ -150,58 +154,10 @@ nav {
 
 .tradingview-widget-container {
   background-color: #242424;
-  padding: 10px; }
-
-.ancho {
-  position: relative;
-  margin: 0 auto;
-  padding: 0;
-  width: 90%; }
-
-#img-grafico {
-  width: 100%;
-  border-radius: 6px;
-  box-shadow: 0px 3px 5px rgba(15, 15, 15, 0.3); }
-
-footer {
-  padding: 10px 30px;
-  background-image: url(../images/gutter.gif);
-  border-radius: 2px; }
-
-footer p {
-  text-align: center;
-  font-family: 'Crimson Text', serif; }
-
-.social-logo {
-  width: 30px;
-  margin: 10px;
+  padding: 10px;
   border-radius: 5px; }
 
-.social-logo:hover {
-  -webkit-box-shadow: 0px 0px 5px 3px #646fd4;
-  -moz-box-shadow: 0px 0px 5px 3px #646fd4;
-  box-shadow: 0px 0px 5px 3px #646fd4; }
-
-.contenedor {
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-  margin: 10px; }
-
-.movil {
-  width: 40px;
-  transform: rotate(40deg);
-  right: 30%; }
-
-.movil-texto {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center; }
-
-/* fin footer */
+/* -- Fin Página Calendario -- */
 /*Página graficos.html*/
 .grafico-tradingview {
   display: grid;
@@ -225,26 +181,11 @@ footer p {
 
 .area-grafico {
   grid-area: area-grafico;
-  height: 500px; }
+  height: 500px;
+  box-shadow: 3px 3px 10px #242424; }
 
 /* Fin Página graficos.html*/
-/* Página informacion.html */
-.patrones {
-  background-color: #DBDFFD;
-  display: flex;
-  flex-direction: column;
-  align-content: stretch;
-  justify-content: space-evenly;
-  align-items: center; }
-
-#patrones-graficos {
-  padding: 10px; }
-
-#patrones-graficos h3 {
-  font-family: 'Crimson Text', serif;
-  color: #003865;
-  padding: 20px; }
-
+/* -- Página informacion.html -- */
 .patrones-container {
   display: grid;
   grid-template-columns: auto auto;
@@ -261,60 +202,52 @@ footer p {
   background: url(../images/imagen-fondo.png) no-repeat;
   background-size: cover; }
 
-.patrones-titulo {
-  font-family: 'Crimson Text', serif;
-  color: #003865;
-  padding: 20px; }
-
-.subtitulo-patrones {
-  grid-area: titulo;
-  font-family: 'Crimson Text', serif;
-  color: #003865;
-  text-decoration: overline underline;
-  text-shadow: 2px 2px 2px rgba(224, 219, 219, 0.534);
-  font-size: 1.1em; }
-
-.texto-patrones {
-  grid-area: texto;
+.patrones {
   background-color: #DBDFFD;
-  box-shadow: 10px 10px 25px #242424;
-  padding: 10px;
-  margin: 10px;
-  color: #003865; }
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: center; }
+  .patrones .patrones-titulo {
+    font-family: 'Crimson Text', serif;
+    color: #003865;
+    padding: 20px; }
 
-.patrones-img {
-  width: 400px;
-  height: 300px;
-  grid-area: img;
-  border: #fff 1px solid;
-  border-radius: 2px;
-  transition: box-shadow 2s linear 300ms;
-  -webkit-transition: box-shadow 2s linear 300ms; }
+#patrones-graficos {
+  padding: 10px; }
+  #patrones-graficos h3 {
+    font-family: 'Crimson Text', serif;
+    color: #003865;
+    padding: 20px; }
+  #patrones-graficos .patrones-img {
+    grid-area: img;
+    width: 400px;
+    height: 300px;
+    border: #fff 1px solid;
+    border-radius: 5px;
+    transition: box-shadow 2s linear 300ms;
+    -webkit-transition: box-shadow 2s linear 300ms; }
+    #patrones-graficos .patrones-img:hover {
+      box-shadow: 1px 0px 10px 5px #646FD4;
+      -webkit-box-shadow: 1px 0px 10px 5px #646FD4; }
+  #patrones-graficos .subtitulo-patrones {
+    grid-area: titulo;
+    font-family: 'Crimson Text', serif;
+    color: #003865;
+    text-decoration: overline underline;
+    text-shadow: 2px 2px 2px rgba(224, 219, 219, 0.534);
+    font-size: 1.1em; }
+  #patrones-graficos .texto-patrones {
+    grid-area: texto;
+    background-color: #DBDFFD;
+    box-shadow: 5px 5px 10px #242424;
+    padding: 10px;
+    margin: 10px;
+    color: #003865; }
 
-.patrones-img:hover {
-  box-shadow: 1px 0px 10px 5px #646FD4;
-  -webkit-box-shadow: 1px 0px 10px 5px #646FD4; }
-
-/* -------- */
+/* --- Fin página información----- */
 /* Página suscribete.html*/
-.formulario-titulo {
-  background-color: #607EAA;
-  font-size: 18px;
-  color: #fff;
-  padding: 10px;
-  /* margin: 10px; */
-  border-radius: 5px;
-  justify-content: center; }
-
-label {
-  font-size: 1rem;
-  padding: 1%; }
-
-input {
-  padding: 1%;
-  border-radius: 3px;
-  margin: 5px; }
-
 .formulario {
   background-color: #9BA3EB;
   padding: 20px;
@@ -324,50 +257,94 @@ input {
   justify-content: center;
   background: url(../images/grafico-forex.png) no-repeat;
   background-size: cover; }
+  .formulario form {
+    background-color: #EAE3D2;
+    border-radius: 5px; }
+    .formulario form h2 {
+      background-color: #607EAA;
+      font-size: 18px;
+      color: #fff;
+      padding: 10px;
+      /* margin: 10px; */
+      border-radius: 5px;
+      justify-content: center; }
+    .formulario form label {
+      font-size: 1rem;
+      padding: 1%; }
+    .formulario form input {
+      padding: 1%;
+      border-radius: 3px;
+      margin: 5px; }
+    .formulario form .datos-personales {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: stretch;
+      justify-content: center;
+      align-items: stretch;
+      margin: 5px;
+      padding: 5px; }
+    .formulario form .opciones {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 5px;
+      padding: 5px; }
+    .formulario form .boton {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      padding: 10px; }
+    .formulario form .btn-enviar {
+      font-size: 15px;
+      font-family: 'Montserrat', sans-serif;
+      width: 80px;
+      height: 40px;
+      border-width: 2px;
+      color: #fff;
+      border-color: #599bb3;
+      border-radius: 5px;
+      background: linear-gradient(#599bb3, #408c99); }
+      .formulario form .btn-enviar:hover {
+        background: linear-gradient(#408c99, #599bb3); }
 
-form {
-  background-color: #EAE3D2;
-  border-radius: 5px; }
+/* -- Fin Suscribet.html -- */
+/* 
+inicio Footer */
+footer {
+  padding: 10px 30px;
+  background-image: url(../images/gutter.gif);
+  border-radius: 2px; }
+  footer p {
+    text-align: center;
+    font-family: 'Crimson Text', serif; }
+  footer .movil-texto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center; }
+  footer .contenedor {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px; }
+    footer .contenedor .social-logo {
+      width: 30px;
+      margin: 10px;
+      border-radius: 5px; }
+      footer .contenedor .social-logo:hover {
+        -webkit-box-shadow: 0px 0px 5px 3px #646fd4;
+        -moz-box-shadow: 0px 0px 5px 3px #646fd4;
+        box-shadow: 0px 0px 5px 3px #646fd4; }
+  footer .movil {
+    width: 40px;
+    transform: rotate(40deg);
+    right: 30%; }
 
-.datos-personales {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: stretch;
-  justify-content: center;
-  align-items: stretch;
-  margin: 5px;
-  padding: 5px; }
-
-.opciones {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin: 5px;
-  padding: 5px; }
-
-.boton {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  padding: 10px; }
-
-.btn-enviar {
-  font-size: 15px;
-  font-family: 'Montserrat', sans-serif;
-  width: 80px;
-  height: 40px;
-  border-width: 2px;
-  color: #fff;
-  border-color: #599bb3;
-  border-radius: 5px;
-  background: linear-gradient(#599bb3, #408c99); }
-
-.btn-enviar:hover {
-  background: linear-gradient(#408c99, #599bb3); }
-
-/* -------- */
+/* fin footer */
 /* Media Querys */
 @media screen and (min-width: 1025px) and (max-width: 2400px) {
   .container-body {
