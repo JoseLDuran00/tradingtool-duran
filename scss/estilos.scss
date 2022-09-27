@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: url(../images/pyramid.png);
+  }
+
+  .ancho {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    width: 90%;
+  }
+
+  $fuente-titulo : 'Montserrat', sans-serif;
+  $fuente-texto : 'Crimson Text', serif;
+
+  $color-fondo-nav : #F9F5EB ;
+  $color-nav : #1c3879;
+  $color-nav-hover:#94b2e0;
+  $color-sombra-texto : rgba(224,219,219,0.534);
+  $color-fondo: #DBDFFD; 
+  $color-texto : #003865;
+  $color-sombra-caja: #242424;
+
+
+  
+  @import 'componentes/menu-navegacion';
+
+  @import 'componentes/index';
+
+  @import 'componentes/calendario';
+
+  @import 'componentes/grafico';
+
+  @import 'componentes/informacion';
+  
+  @import 'componentes/suscribete';
+
+  @import 'componentes/footer'; 
+
+   /* Media Querys */
+   @media screen and (min-width:1025px) and (max-width:2400px) {
+    .container-body{
+      margin: 0 100px;
+    }
+    .img{
+      display: flex;
+    }
+    
+  }
+
+  @import 'componentes/mediaQueryMovil';
+
+  @import 'componentes/mediaQueryTablet';
+
+  
+ 
+    

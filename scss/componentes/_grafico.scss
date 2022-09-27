@@ -1,0 +1,32 @@
+/*Página graficos.html*/
+.grafico-tradingview {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 1.5fr 0.5fr;
+    grid-template-rows: 0.5fr 1fr 1fr 0.5fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: 
+    "grafico-titulo grafico-titulo grafico-titulo grafico-titulo"
+   "... area-grafico area-grafico ..."
+   "... area-grafico area-grafico ..."
+   ". . . .";
+    background-color:  $color-fondo; }
+  
+  .grafico-titulo {
+    grid-area: grafico-titulo;
+    padding: 20px;
+    margin-bottom: 5px;
+    font-family: $fuente-texto;
+    color: $color-texto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+  
+  .area-grafico {
+    grid-area: area-grafico;
+    height: 500px; 
+    box-shadow: 3px 3px 10px $color-sombra-caja;
+    }
+   
+   /* Fin Página graficos.html*/
