@@ -5,7 +5,7 @@
     background-color: #9BA3EB;
     padding: 20px;
     font-family: 'Crimson Text', serif;
-    color: #003865;
+    color: $color-texto;
     display: flex;
     justify-content: center;
     background: url(../images/grafico-forex.png) no-repeat;
@@ -57,7 +57,7 @@
           
           .btn-enviar {
             font-size: 15px;
-            font-family: 'Montserrat', sans-serif;
+            font-family: $fuente-titulo;
             width: 80px;
             height: 40px;
             border-width: 2px;

@@ -9,14 +9,7 @@ footer {
         text-align: center;
         font-family: 'Crimson Text', serif;
     }
-    .movil-texto{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-    }
+    
     .contenedor {
         display: flex;
         justify-content: center;
@@ -40,7 +33,15 @@ footer {
         right: 30%;
         
     }
-
+    
   }
+  .movil-texto{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
    
   /* fin footer */

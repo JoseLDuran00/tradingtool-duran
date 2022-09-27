@@ -3,30 +3,30 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #DBDFFD;
+    background-color:  $color-fondo;
     padding-bottom: 15px; 
     h1{
         padding: 20px;
         margin-bottom: 5px;
-        font-family: 'Crimson Text', serif;
-        color: #003865; 
+        font-family: $fuente-texto ;
+        color: $color-texto; 
         text-shadow: 2px 2px 2px rgba(224, 219, 219, 0.904);
     }
     p{
         text-align: center;
-        font-family: 'Crimson Text', serif;
+        font-family: $fuente-texto ;
         text-justify: newspaper;
-        color: #003865;
+        color:  $color-texto;
     }
     .cal-economico {
         width: 60%;
         height: 80vh; 
-        box-shadow: 3px 3px 10px #242424;
+        box-shadow: 3px 3px 10px $color-sombra-caja;
     }
 }
   
 .tradingview-widget-container{
-    background-color: #242424;
+    background-color: $color-sombra-caja;
     padding: 10px;
     border-radius: 5px;
 }

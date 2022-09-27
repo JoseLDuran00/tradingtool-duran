@@ -12,7 +12,7 @@
       align-content: center;
       align-items: center;
       justify-items: center;
-      border: #003865 1px solid;
+      border: $color-texto 1px solid;
       margin: 5px;
       border-radius: 10px;
       
@@ -21,15 +21,15 @@
   }
 
   .patrones{
-    background-color: #DBDFFD;
+    background-color: $color-fondo;
       display: flex;
       flex-direction: column;
       align-content: stretch;
       justify-content: space-evenly;
       align-items: center;
       .patrones-titulo{
-        font-family: 'Crimson Text', serif;
-        color: #003865;
+        font-family: $fuente-texto;
+        color: $color-texto;
         padding: 20px;
       }
   }
@@ -37,8 +37,8 @@
   #patrones-graficos{
     padding: 10px;
     h3{
-        font-family: 'Crimson Text', serif;
-    color: #003865;
+        font-family: $fuente-texto;
+    color: $color-texto;
     padding: 20px;
     }
     .patrones-img {
@@ -57,20 +57,20 @@
       }
       .subtitulo-patrones { 
         grid-area: titulo; 
-        font-family: 'Crimson Text', serif;
-        color: #003865;
+        font-family: $fuente-texto ;
+        color: $color-texto;
       
         text-decoration: overline underline;
-        text-shadow: 2px 2px 2px rgba(224, 219, 219, 0.534);
+        text-shadow: 2px 2px 2px $color-sombra-texto;
         font-size: 1.1em;
       }
       .texto-patrones { 
         grid-area: texto; 
-        background-color: #DBDFFD;
-        box-shadow: 5px 5px 10px #242424;
+        background-color:  $color-fondo;
+        box-shadow: 5px 5px 10px $color-sombra-caja;
         padding: 10px;
         margin: 10px;
-        color : #003865;
+        color : $color-texto;
       }
     
   }

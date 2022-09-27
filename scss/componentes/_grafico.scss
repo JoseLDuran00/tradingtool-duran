@@ -11,14 +11,14 @@
    "... area-grafico area-grafico ..."
    "... area-grafico area-grafico ..."
    ". . . .";
-    background-color: #DBDFFD; }
+    background-color:  $color-fondo; }
   
   .grafico-titulo {
     grid-area: grafico-titulo;
     padding: 20px;
     margin-bottom: 5px;
-    font-family: 'Crimson Text', serif;
-    color: #003865;
+    font-family: $fuente-texto;
+    color: $color-texto;
     display: flex;
     align-items: center;
     justify-content: space-around; }
@@ -26,7 +26,7 @@
   .area-grafico {
     grid-area: area-grafico;
     height: 500px; 
-    box-shadow: 3px 3px 10px #242424;
+    box-shadow: 3px 3px 10px $color-sombra-caja;
     }
    
    /* Fin Página graficos.html*/

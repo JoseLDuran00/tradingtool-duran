@@ -19,7 +19,7 @@
   
   .img {
     grid-area: img;
-    background-color: #DBDFFD;
+    background-color:  $color-fondo;
     .grafico-diario-img {
       width: 75vw;
       max-width: 600px;
@@ -39,7 +39,7 @@
   .titulo-img {
     grid-area: titulo-img;
     padding-top: 15px;
-    background-color: #DBDFFD;
+    background-color:  $color-fondo;
     padding-left: 15px;
     display: flex;
     align-content: center;
@@ -49,8 +49,8 @@
   .texto {
     grid-area: texto; 
     .grafico-diario-text {
-      font-family: 'Crimson Text', serif;
-      color: #003865;
+      font-family: $fuente-texto;
+      color: $color-texto;
       padding: 20px;
       margin-bottom: 2px;
       font-size: 1.1rem;
@@ -58,7 +58,7 @@
   }
 
   .grafico-diario {
-      background-color: #DBDFFD;
+      background-color: $color-fondo;
       display: flex;
       flex-direction: column;
       align-content: center;
@@ -72,8 +72,8 @@
     padding: 10px;
 
     h2,h3{
-      font-family: 'Crimson Text', serif;
-      color: #003865;
+      font-family: $fuente-texto;
+      color: $color-texto;
       margin-left: 20px;
       padding: 10px 10px 10px 10px;
       text-align: center;
@@ -83,15 +83,15 @@
       border-radius: 10px;
       margin: 15px;
       padding: 5px;
-      color: #003865;
-      box-shadow: 3px 3px 10px #242424;
+      color: $color-texto;
+      box-shadow: 3px 3px 10px $color-sombra-caja;
     
       .noticia-contenedor{
         display: flex;
         justify-content: space-between;
         padding: 10px;
           .noticias-flex{
-            font-family: 'Crimson Text', serif;
+            font-family: $fuente-texto;
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -100,7 +100,7 @@
                 width: 150px;
                 height: 100px;
                 border-radius: 5px;
-                border: 1px solid #DBDFFD;
+                border: 1px solid $color-fondo;
               }
           }
           .noticias-texto{

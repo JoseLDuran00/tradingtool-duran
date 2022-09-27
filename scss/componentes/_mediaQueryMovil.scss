@@ -35,7 +35,7 @@
       width: 120px;
       height: 100px;
       border-radius: 5px;
-      border: 1px solid #DBDFFD;
+      border: 1px solid $color-fondo;
     }
 
     /*pagina calendario*/
@@ -59,7 +59,7 @@
         " area-grafico area-grafico "
         ". . ";
         
-        background-color: #DBDFFD;
+        background-color: $color-fondo;
     }
 
     .area-grafico{
@@ -79,15 +79,15 @@
         "texto texto";
         align-content: space-around;
         align-items: center;
-        border: #003865 1px solid;
+        border: $color-texto 1px solid;
         margin: 5px;
         border-radius: 5px;
         justify-items: center;
     }
     .patrones-titulo{
       grid-area: titulo1;
-      font-family: 'Crimson Text', serif;
-      color: #003865;
+      font-family: $fuente-texto;
+      color: $color-texto;
       padding: 20px;
      
     }

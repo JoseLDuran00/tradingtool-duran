@@ -16,11 +16,11 @@ body {
 /* Menu Navegación  */
 .color-nav {
   background-color: #F9F5EB;
-  box-shadow: 0px 1px #1C3879; }
+  box-shadow: 0px 1px #1c3879; }
 
 nav {
   padding: 1rem;
-  background-color: #1C3879;
+  background-color: #1c3879;
   display: flex; }
   nav ul {
     display: flex;
@@ -77,7 +77,7 @@ nav {
 .texto {
   grid-area: texto; }
   .texto .grafico-diario-text {
-    font-family: 'Crimson Text', serif;
+    font-family: "Crimson Text", serif;
     color: #003865;
     padding: 20px;
     margin-bottom: 2px;
@@ -96,7 +96,7 @@ nav {
   background-color: #9BA3EB;
   padding: 10px; }
   .noticias h2, .noticias h3 {
-    font-family: 'Crimson Text', serif;
+    font-family: "Crimson Text", serif;
     color: #003865;
     margin-left: 20px;
     padding: 10px 10px 10px 10px;
@@ -113,7 +113,7 @@ nav {
       justify-content: space-between;
       padding: 10px; }
       .noticias .cuadro .noticia-contenedor .noticias-flex {
-        font-family: 'Crimson Text', serif;
+        font-family: "Crimson Text", serif;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -144,12 +144,12 @@ nav {
   .calendario h1 {
     padding: 20px;
     margin-bottom: 5px;
-    font-family: 'Crimson Text', serif;
+    font-family: "Crimson Text", serif;
     color: #003865;
     text-shadow: 2px 2px 2px rgba(224, 219, 219, 0.904); }
   .calendario p {
     text-align: center;
-    font-family: 'Crimson Text', serif;
+    font-family: "Crimson Text", serif;
     text-justify: newspaper;
     color: #003865; }
   .calendario .cal-economico {
@@ -178,7 +178,7 @@ nav {
   grid-area: grafico-titulo;
   padding: 20px;
   margin-bottom: 5px;
-  font-family: 'Crimson Text', serif;
+  font-family: "Crimson Text", serif;
   color: #003865;
   display: flex;
   align-items: center;
@@ -215,14 +215,14 @@ nav {
   justify-content: space-evenly;
   align-items: center; }
   .patrones .patrones-titulo {
-    font-family: 'Crimson Text', serif;
+    font-family: "Crimson Text", serif;
     color: #003865;
     padding: 20px; }
 
 #patrones-graficos {
   padding: 10px; }
   #patrones-graficos h3 {
-    font-family: 'Crimson Text', serif;
+    font-family: "Crimson Text", serif;
     color: #003865;
     padding: 20px; }
   #patrones-graficos .patrones-img {
@@ -238,7 +238,7 @@ nav {
       -webkit-box-shadow: 1px 0px 10px 5px #646FD4; }
   #patrones-graficos .subtitulo-patrones {
     grid-area: titulo;
-    font-family: 'Crimson Text', serif;
+    font-family: "Crimson Text", serif;
     color: #003865;
     text-decoration: overline underline;
     text-shadow: 2px 2px 2px rgba(224, 219, 219, 0.534);
@@ -303,7 +303,7 @@ nav {
       padding: 10px; }
     .formulario form .btn-enviar {
       font-size: 15px;
-      font-family: 'Montserrat', sans-serif;
+      font-family: "Montserrat", sans-serif;
       width: 80px;
       height: 40px;
       border-width: 2px;
@@ -324,13 +324,6 @@ footer {
   footer p {
     text-align: center;
     font-family: 'Crimson Text', serif; }
-  footer .movil-texto {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center; }
   footer .contenedor {
     display: flex;
     justify-content: center;
@@ -348,6 +341,14 @@ footer {
     width: 40px;
     transform: rotate(40deg);
     right: 30%; }
+
+.movil-texto {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
 
 /* fin footer */
 /* Media Querys */
@@ -415,7 +416,7 @@ footer {
     justify-items: center; }
   .patrones-titulo {
     grid-area: titulo1;
-    font-family: 'Crimson Text', serif;
+    font-family: "Crimson Text", serif;
     color: #003865;
     padding: 20px; }
   .patrones-img {
