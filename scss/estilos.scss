@@ -9,6 +9,8 @@ $color-fondo: #DBDFFD;
 $color-texto: #003865;
 $color-sombra-caja: #242424;
 
+@import 'mixin.scss';
+
 @import 'componentes/body';
 @import 'componentes/menu-navegacion';
 @import 'componentes/index';
