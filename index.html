@@ -10,7 +10,7 @@
   <meta name="title" content="Trading Tool">
   <meta name="description" content="Encontrarás Noticias, Calendario Económico e información sobre el mercado financiero.">
   <meta name="keywords" content="Forex, Noticias, Calendario Económico, Información, Educación.">
- 
+
   <!--Favicon -->
   <link rel="icon" href="./images/favicon-16x16.png">
   <!-- CSS Boostrap -->
@@ -64,6 +64,44 @@
         </nav>
         <!-- Fin Nav Bar -->
       </header>
+
+      <!-- TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <div class="tradingview-widget-copyright"><a href="https://es.tradingview.com/markets/" rel="noopener" target="_blank"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+          {
+            "symbols": [{
+                "proName": "FOREXCOM:SPXUSD",
+                "title": "S&P 500"
+              },
+              {
+                "proName": "FX_IDC:EURUSD",
+                "title": "EUR/USD"
+              },
+              {
+                "proName": "BITSTAMP:BTCUSD",
+                "title": "Bitcoin"
+              },
+              {
+                "description": "NASDAQ",
+                "proName": "SKILLING:NASDAQ"
+              },
+              {
+                "description": "Oro Dollar",
+                "proName": "FOREXCOM:XAUUSD"
+              }
+            ],
+            "showSymbolLogo": false,
+            "colorTheme": "dark",
+            "isTransparent": false,
+            "displayMode": "adaptive",
+            "locale": "es"
+          }
+        </script>
+      </div>
+      <!-- TradingView Widget END -->
+
     </div>
     <div class="img">
       <div class="grafico-diario-img">
@@ -71,7 +109,7 @@
           <img id="img-grafico" src="./images/XAUUSD_2022-10-03_18-46-42.png" alt="oro-dolar">
         </a>
       </div>
-        <!-- agrandar imagen al hacer click :)  -->
+      <!-- agrandar imagen al hacer click :)  -->
       <div tabindex="-1" aria-labelledby="modalimage" aria-hidden="true" class="modal fade" id="modalImage">
         <div class="modal-dialog modal-lg modal-dialog-centered">
           <div class="modal-content">
@@ -85,14 +123,15 @@
     </div>
     <div class="titulo-img">
       <h1>Gráfico del Día - Oro Dolar</h1>
-      
+
     </div>
 
     <div class="texto grafico-diario titulo">
       <p>El oro sube ligeramente, pero sigue por debajo de los 1.700 dólares</p>
-      <p class="grafico-diario-text">3 oct (Reuters) -Los precios del oro subieron más de un 2% el lunes, impulsados por la debilidad del dólar y de los rendimientos de los bonos, ya que los recientes mínimos atrajeron a los inversores y también provocaron un repunte de la plata a registrar su mejor día desde finales de 2008.</p>
+      <p class="grafico-diario-text">3 oct (Reuters) -Los precios del oro subieron más de un 2% el lunes, impulsados por la debilidad del dólar y de los rendimientos de los bonos, ya que los recientes mínimos atrajeron a los inversores y también
+        provocaron un repunte de la plata a registrar su mejor día desde finales de 2008.</p>
       <p class="grafico-diario-text">El oro al contado subía un 2,2% a 1.696,39 dólares la onza, a las 1737 GMT, su mejor desempeño diario desde inicios de marzo. Los futuros de oro de Estados Unidos ganaron un 2% a 1.705,40 dólares.</p>
-      <p class="grafico-diario-text"> 
+      <p class="grafico-diario-text">
         <a href="https://es.investing.com/news/economy/oro-sube-por-dolar-mas-debil-temores-de-alza-de-tasas-limitan-escalada-2301010" target="_blank">
           Más información...
         </a>
@@ -110,7 +149,7 @@
         <a href="https://es.euronews.com/next/2022/10/03/mercados-preciosos#:~:text=3%20oct%20–%20Los%20precios%20del,onza%2C%20a%20las%200852%20GMT." target="_blank">
           <h3>Precio del oro subió casi un +2%</h3>
         </a>
-        
+
         <div class="noticia-contenedor">
           <div class="noticias-flex">
             <img class="noticias-img" src="./images/oro.jpg" alt="Oro">
@@ -118,11 +157,11 @@
           <div class="noticias-texto">
             <p>
               El lunes, los precios del oro subían ya que el dólar se debilitó, aunque las ganancias se veían limitadas por los temores de aumentos agresivos de las tasas por parte de la Reserva Federal de Estados Unidos.
-El analista independiente Ross Norman dijo:
-“La corrección del dólar estadounidense en este momento sin duda le ha dado un poco de impulso al oro. Pero sospecho que las expectativas de nuevas alzas en las tasas están limitando esas ganancias.”
-El Dólar caía un -0.3% frente a sus rivales.
-El Euro ganaba un +0,3%, a 0,97823 dólares.
-De cara al futuro, los inversores esperan los datos de las nóminas no agrícolas de Estados Unidos que se publican el viernes y una gran cantidad de datos del PMI manufacturero para conocer la salud de la economía mundial.
+              El analista independiente Ross Norman dijo:
+              “La corrección del dólar estadounidense en este momento sin duda le ha dado un poco de impulso al oro. Pero sospecho que las expectativas de nuevas alzas en las tasas están limitando esas ganancias.”
+              El Dólar caía un -0.3% frente a sus rivales.
+              El Euro ganaba un +0,3%, a 0,97823 dólares.
+              De cara al futuro, los inversores esperan los datos de las nóminas no agrícolas de Estados Unidos que se publican el viernes y una gran cantidad de datos del PMI manufacturero para conocer la salud de la economía mundial.
             </p>
           </div>
         </div>
@@ -132,14 +171,15 @@ De cara al futuro, los inversores esperan los datos de las nóminas no agrícola
         <a href="https://es.finance.yahoo.com/noticias/petróleo-texas-abre-subida-4-133213316.html">
           <h3>El petróleo de Texas sube un 5,2 % y cierra en 83,64 dólares.</h3>
         </a>
-        
+
         <div class="noticia-contenedor">
           <div class="noticias-flex">
             <img src="./images/petroleo.jpg" alt="petroleo">
           </div>
           <div class="noticias-texto">
             <p>
-              Nueva York, 3 oct (EFE).- El precio del petróleo intermedio de Texas (WTI) cerró este lunes con una subida del 5,2 % y se situó en 83,64 dólares, volviendo a sobrepasar la barrera de los 80 dólares, cuando los inversores esperan un recorte importante de la producción de la OPEP+ en la reunión de esta semana.
+              Nueva York, 3 oct (EFE).- El precio del petróleo intermedio de Texas (WTI) cerró este lunes con una subida del 5,2 % y se situó en 83,64 dólares, volviendo a sobrepasar la barrera de los 80 dólares, cuando los inversores esperan un
+              recorte importante de la producción de la OPEP+ en la reunión de esta semana.
             </p>
           </div>
         </div>
@@ -149,13 +189,14 @@ De cara al futuro, los inversores esperan los datos de las nóminas no agrícola
         <a href="https://www.fxstreet.es/news/forex-hoy-sesion-asiatica-los-mercados-comienzan-la-semana-con-optimismo-202210032023" target="_blank">
           <h3>Sesión asiática: Los Mercados comienzan la semana con optimismo</h3>
         </a>
-        
+
         <div class="noticia-contenedor">
           <div class="noticias-flex">
             <img class="noticias-img" src="./images/dolar-euro.jpg" alt="petroleo">
           </div>
           <div class="noticias-texto">
-            <p>El Dólar reanudó su caída al inicio de la semana, terminando el lunes con pérdidas en todo el tablero de divisas. El par EUR/USD logró un modesto avance y se estableció en torno a 0.9820, siendo la divisa compartida una de las que peor se comportó frente al dólar. La revisión a la baja de los PMIs de manufactura global de S&P pesó sobre el euro.
+            <p>El Dólar reanudó su caída al inicio de la semana, terminando el lunes con pérdidas en todo el tablero de divisas. El par EUR/USD logró un modesto avance y se estableció en torno a 0.9820, siendo la divisa compartida una de las que peor
+              se comportó frente al dólar. La revisión a la baja de los PMIs de manufactura global de S&P pesó sobre el euro.
             </p>
           </div>
         </div>
