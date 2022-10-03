@@ -71,12 +71,20 @@
     background-color: #9BA3EB;
     padding: 10px;
 
-    h2,h3{
+    h2{
       font-family: $fuente-texto;
       color: $color-texto;
       margin-left: 20px;
       padding: 10px 10px 10px 10px;
       text-align: center;
+    }
+
+    h3{
+      @extend h2;
+      text-decoration: underline;
+      text-decoration-color: $color-nav;
+      
+    
     }
     .cuadro{
       border: 1px #fff solid;

@@ -1,0 +1,19 @@
+======================================================
+Se agregan las siguientes Etiquetas en todos los Html
+======================================================
+
+<meta name="title" content="Trading Tool">
+<meta name="description" content="Encontrarás Noticias, Calendario Económico e información sobre el mercado financiero.">
+<meta name="keywords" content="Forex, Noticias, Calendario Económico, Información, Educación.">
+
+
+======================================================
+--> Se agrega etiqueta H1 en suscribete.html
+
+--> Se agrega nombre de sitio en páginas
+	-> Trading Tool | < nombre sitio html >
+
+--> Se revisan Etiquetas "alt" en las imágenes
+
+--> Se cambia etiqueta <html lang="en"> a <html lang="es">
+======================================================

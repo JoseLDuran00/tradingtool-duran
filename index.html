@@ -6,10 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Trading Tool </title>
+
+  <meta name="title" content="Trading Tool">
+  <meta name="description" content="Encontrarás Noticias, Calendario Económico e información sobre el mercado financiero.">
+  <meta name="keywords" content="Forex, Noticias, Calendario Económico, Información, Educación.">
+
   <!--Favicon -->
   <link rel="icon" href="./images/favicon-16x16.png">
   <!-- CSS Boostrap -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
   <!-- Fuentes de Google -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,12 +32,12 @@
         <nav class="navbar navbar-expand-lg bg-light">
           <div class="container-fluid ">
             <a class="navbar-brand" href="#">
-              <img class="logo" src="./images/logo_100_80-removebg.png"  alt="logo">
+              <img class="logo" src="./images/logo_100_80-removebg.png" alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-      
+
             <div class="collapse navbar-collapse" id="navbarsExample05">
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
@@ -50,79 +55,148 @@
                 <li class="nav-item">
                   <a class="nav-link" href="suscribete.html">Suscríbete</a>
                 </li>
-                
+
               </ul>
-      
+
             </div>
           </div>
-          
+
         </nav>
         <!-- Fin Nav Bar -->
       </header>
+
+      <!-- TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <div class="tradingview-widget-copyright"><a href="https://es.tradingview.com/markets/" rel="noopener" target="_blank"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+          {
+            "symbols": [{
+                "proName": "FOREXCOM:SPXUSD",
+                "title": "S&P 500"
+              },
+              {
+                "proName": "FX_IDC:EURUSD",
+                "title": "EUR/USD"
+              },
+              {
+                "proName": "BITSTAMP:BTCUSD",
+                "title": "Bitcoin"
+              },
+              {
+                "description": "NASDAQ",
+                "proName": "SKILLING:NASDAQ"
+              },
+              {
+                "description": "Oro Dollar",
+                "proName": "FOREXCOM:XAUUSD"
+              }
+            ],
+            "showSymbolLogo": false,
+            "colorTheme": "dark",
+            "isTransparent": false,
+            "displayMode": "adaptive",
+            "locale": "es"
+          }
+        </script>
+      </div>
+      <!-- TradingView Widget END -->
+
     </div>
     <div class="img">
       <div class="grafico-diario-img">
-        <img id="img-grafico" src="./images/XAUUSD_2022-08-17_12-37-24.png" alt="oro-dolar">
+        <a href="#" data-bs-toggle="modal" data-bs-target="#modalImage">
+          <img id="img-grafico" src="./images/XAUUSD_2022-10-03_18-46-42.png" alt="oro-dolar">
+        </a>
       </div>
-      
+      <!-- agrandar imagen al hacer click :)  -->
+      <div tabindex="-1" aria-labelledby="modalimage" aria-hidden="true" class="modal fade" id="modalImage">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <img src="./images/XAUUSD_2022-10-03_18-46-42.png" alt="oro-dolar">
+          </div>
+
+        </div>
+      </div>
+
+
     </div>
     <div class="titulo-img">
-      <h1>Gráfico del Día</h1>
+      <h1>Gráfico del Día - Oro Dolar</h1>
+
     </div>
-      
+
     <div class="texto grafico-diario titulo">
-      <p class="grafico-diario-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nisi dolorum rem dignissimos obcaecati, nam impedit! Quidem vero vel quisquam, atque impedit magnam rerum quaerat dicta. Ratione soluta
-        consectetur deserunt.
-        Unde consequatur possimus magni quisquam at rem tempora recusandae vitae facere voluptas eveniet sit, hic ut culpa. Explicabo dignissimos, aperiam praesentium eveniet quisquam doloremque rem? Ipsum corrupti optio eveniet dicta?
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit odit, dignissimos laudantium et soluta repellat veniam praesentium voluptates illo quos rem. Perferendis officiis ipsam, molestias harum totam exercitationem culpa excepturi ullam eum laudantium mollitia repellendus sint temporibus optio minus ipsum nostrum repudiandae nulla ea odio! Quibusdam atque consectetur voluptatibus alias.</p>
+      <p>El oro sube ligeramente, pero sigue por debajo de los 1.700 dólares</p>
+      <p class="grafico-diario-text">3 oct (Reuters) -Los precios del oro subieron más de un 2% el lunes, impulsados por la debilidad del dólar y de los rendimientos de los bonos, ya que los recientes mínimos atrajeron a los inversores y también
+        provocaron un repunte de la plata a registrar su mejor día desde finales de 2008.</p>
+      <p class="grafico-diario-text">El oro al contado subía un 2,2% a 1.696,39 dólares la onza, a las 1737 GMT, su mejor desempeño diario desde inicios de marzo. Los futuros de oro de Estados Unidos ganaron un 2% a 1.705,40 dólares.</p>
+      <p class="grafico-diario-text">
+        <a href="https://es.investing.com/news/economy/oro-sube-por-dolar-mas-debil-temores-de-alza-de-tasas-limitan-escalada-2301010" target="_blank">
+          Más información...
+        </a>
+      </p>
     </div>
     <div>
 
-    </div>      
-    
+    </div>
+
 
     <div class="noticias">
       <h2> Noticias de la Semana</h2>
 
       <div class="cuadro">
-        <h3>Lorem ipsum dolor sit amet consectetur</h3>
+        <a href="https://es.euronews.com/next/2022/10/03/mercados-preciosos#:~:text=3%20oct%20–%20Los%20precios%20del,onza%2C%20a%20las%200852%20GMT." target="_blank">
+          <h3>Precio del oro subió casi un +2%</h3>
+        </a>
+
         <div class="noticia-contenedor">
           <div class="noticias-flex">
             <img class="noticias-img" src="./images/oro.jpg" alt="Oro">
           </div>
           <div class="noticias-texto">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptatum nemo corrupti nam perferendis itaque iusto neque minus quam perspiciatis saepe, harum aperiam mollitia laudantium aspernatur modi sint provident fugit.
-              Iusto consequuntur corrupti expedita possimus, eligendi sint tenetur ex, officiis, recusandae repudiandae nulla excepturi vitae placeat numquam unde voluptas voluptatem illo. Voluptate quae optio veniam ipsam neque? Voluptatibus, fuga
-              dignissimos!
+            <p>
+              El lunes, los precios del oro subían ya que el dólar se debilitó, aunque las ganancias se veían limitadas por los temores de aumentos agresivos de las tasas por parte de la Reserva Federal de Estados Unidos.
+              El analista independiente Ross Norman dijo:
+              “La corrección del dólar estadounidense en este momento sin duda le ha dado un poco de impulso al oro. Pero sospecho que las expectativas de nuevas alzas en las tasas están limitando esas ganancias.”
+              El Dólar caía un -0.3% frente a sus rivales.
+              El Euro ganaba un +0,3%, a 0,97823 dólares.
+              De cara al futuro, los inversores esperan los datos de las nóminas no agrícolas de Estados Unidos que se publican el viernes y una gran cantidad de datos del PMI manufacturero para conocer la salud de la economía mundial.
             </p>
           </div>
         </div>
       </div>
 
       <div class="cuadro">
-        <h3>Lorem ipsum dolor sit amet consectetur</h3>
+        <a href="https://es.finance.yahoo.com/noticias/petróleo-texas-abre-subida-4-133213316.html">
+          <h3>El petróleo de Texas sube un 5,2 % y cierra en 83,64 dólares.</h3>
+        </a>
+
         <div class="noticia-contenedor">
           <div class="noticias-flex">
-            <img  src="./images/petroleo.jpg" alt="petroleo">
+            <img src="./images/petroleo.jpg" alt="petroleo">
           </div>
           <div class="noticias-texto">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est facilis nam porro modi voluptate, ratione adipisci laboriosam, esse quidem exercitationem magnam dolore excepturi perspiciatis sunt recusandae eos cum error vel.
-              Inventore a accusantium dolor! Provident sint in earum asperiores deserunt reiciendis, eligendi ducimus, odio commodi mollitia ea consequatur rerum neque est. Voluptatem debitis accusamus odit eos recusandae asperiores harum veritatis.
+            <p>
+              Nueva York, 3 oct (EFE).- El precio del petróleo intermedio de Texas (WTI) cerró este lunes con una subida del 5,2 % y se situó en 83,64 dólares, volviendo a sobrepasar la barrera de los 80 dólares, cuando los inversores esperan un
+              recorte importante de la producción de la OPEP+ en la reunión de esta semana.
             </p>
           </div>
         </div>
       </div>
 
       <div class="cuadro">
-        <h3>Lorem ipsum dolor sit amet consectetur</h3>
+        <a href="https://www.fxstreet.es/news/forex-hoy-sesion-asiatica-los-mercados-comienzan-la-semana-con-optimismo-202210032023" target="_blank">
+          <h3>Sesión asiática: Los Mercados comienzan la semana con optimismo</h3>
+        </a>
+
         <div class="noticia-contenedor">
           <div class="noticias-flex">
             <img class="noticias-img" src="./images/dolar-euro.jpg" alt="petroleo">
           </div>
           <div class="noticias-texto">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est facilis nam porro modi voluptate, ratione adipisci laboriosam, esse quidem exercitationem magnam dolore excepturi perspiciatis sunt recusandae eos cum error vel.
-              Inventore a accusantium dolor! Provident sint in earum asperiores deserunt reiciendis, eligendi ducimus, odio commodi mollitia ea consequatur rerum neque est. Voluptatem debitis accusamus odit eos recusandae asperiores harum veritatis.
-              lorem50
+            <p>El Dólar reanudó su caída al inicio de la semana, terminando el lunes con pérdidas en todo el tablero de divisas. El par EUR/USD logró un modesto avance y se estableció en torno a 0.9820, siendo la divisa compartida una de las que peor
+              se comportó frente al dólar. La revisión a la baja de los PMIs de manufactura global de S&P pesó sobre el euro.
             </p>
           </div>
         </div>
@@ -131,38 +205,42 @@
     <div class="footer">
       <footer>
         <div>
-        <div class="movil-texto">
-          <p> Puedes seguirnos en :</p>
-          
-          <div class="contenedor">
-            <a href="https://es-la.facebook.com" target="_blank">
-              <img class="social-logo" src="./images/facebook.png" alt="facebook">
-            </a>
-    
-            <a href="https://twitter.com" target="_blank">
-              <img class="social-logo" src="./images/twitter.png" alt="twitter">
-            </a>
-    
-            <a href="https://www.instagram.com" target="_blank">
-              <img class="social-logo" src="./images/instagram.png" alt="instagram">
-            </a>
-            
+          <div class="movil-texto">
+            <p> Puedes seguirnos en :</p>
+
+            <div class="contenedor">
+              <a href="https://es-la.facebook.com" target="_blank">
+                <img class="social-logo" src="./images/facebook.png" alt="facebook">
+              </a>
+
+              <a href="https://twitter.com" target="_blank">
+                <img class="social-logo" src="./images/twitter.png" alt="twitter">
+              </a>
+
+              <a href="https://www.instagram.com" target="_blank">
+                <img class="social-logo" src="./images/instagram.png" alt="instagram">
+              </a>
+
+            </div>
+            <img class="movil" src="./images/movil.png" alt="movil">
           </div>
+<<<<<<< HEAD
           <img class="movil" src="./images/movil.png" alt="movil">
         </div>
         
     
           
+=======
+
+>>>>>>> mixin
           <p>© Copyright TradingTools</p>
         </div>
       </footer>
-
     </div>
-    
   </div>
 
   <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 
 </html>

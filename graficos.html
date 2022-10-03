@@ -1,15 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gráficos</title>
+  <title>Trading Tool | Gráficos</title>
+
+  <meta name="title" content="Trading Tool | Gráficos">
+  <meta name="description" content="Encontrarás Noticias, Calendario Económico e información sobre el mercado financiero.">
+  <meta name="keywords" content="Forex, Noticias, Calendario Económico, Información, Educación.">
+
   <!--Favicon -->
   <link rel="icon" href="./images/favicon-16x16.png">
   <!-- CSS Boostrap -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
   <!-- Fuentes de Google -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,12 +30,12 @@
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid ">
         <a class="navbar-brand" href="#">
-          <img class="logo" src="./images/logo_100_80-removebg.png"  alt="logo">
+          <img class="logo" src="./images/logo_100_80-removebg.png" alt="logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-  
+
         <div class="collapse navbar-collapse" id="navbarsExample05">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
@@ -48,12 +53,12 @@
             <li class="nav-item">
               <a class="nav-link" href="suscribete.html">Suscríbete</a>
             </li>
-            
+
           </ul>
-  
+
         </div>
       </div>
-      
+
     </nav>
   </header>
 
@@ -61,7 +66,7 @@
   <main>
     <div class="grafico-tradingview">
       <div class="grafico-titulo">
-          <h1>Gráfico Técnico</h1>
+        <h1>Gráfico Técnico</h1>
       </div>
       <div class="area-grafico">
 
@@ -74,24 +79,22 @@
           <script type="text/javascript" src="https://s3.tradingview.com/tv.js">
           </script>
           <script type="text/javascript">
-          new TradingView.widget(
-          {
-          "autosize": true,
-          "width": "100%",
-          "height": "100%",
-          "symbol": "OANDA:XAUUSD",
-          "interval": "D",
-          "timezone": "America/Argentina/Buenos_Aires",
-          "theme": "dark",
-          "style": "1",
-          "locale": "es",
-          "toolbar_bg": "#f1f3f6",
-          "enable_publishing": false,
-          "allow_symbol_change": true,
-          "container_id": "tradingview_91540",
-          "show_popup_button": true,
-        }
-          );
+            new TradingView.widget({
+              "autosize": true,
+              "width": "100%",
+              "height": "100%",
+              "symbol": "OANDA:XAUUSD",
+              "interval": "D",
+              "timezone": "America/Argentina/Buenos_Aires",
+              "theme": "dark",
+              "style": "1",
+              "locale": "es",
+              "toolbar_bg": "#f1f3f6",
+              "enable_publishing": false,
+              "allow_symbol_change": true,
+              "container_id": "tradingview_91540",
+              "show_popup_button": true,
+            });
           </script>
         </div>
         <!-- TradingView Widget END -->
@@ -104,40 +107,40 @@
   <!-- Fin Main -->
 
   <!-- Footer -->
-  
+
   <footer>
     <div>
-    <div class="movil-texto">
-      <p> Puedes seguirnos en :</p>
-      
-      <div class="contenedor">
-        <a href="https://es-la.facebook.com" target="_blank">
-          <img class="social-logo" src="./images/facebook.png" alt="facebook">
-        </a>
+      <div class="movil-texto">
+        <p> Puedes seguirnos en :</p>
 
-        <a href="https://twitter.com" target="_blank">
-          <img class="social-logo" src="./images/twitter.png" alt="twitter">
-        </a>
+        <div class="contenedor">
+          <a href="https://es-la.facebook.com" target="_blank">
+            <img class="social-logo" src="./images/facebook.png" alt="facebook">
+          </a>
 
-        <a href="https://www.instagram.com" target="_blank">
-          <img class="social-logo" src="./images/instagram.png" alt="instagram">
-        </a>
-        
+          <a href="https://twitter.com" target="_blank">
+            <img class="social-logo" src="./images/twitter.png" alt="twitter">
+          </a>
+
+          <a href="https://www.instagram.com" target="_blank">
+            <img class="social-logo" src="./images/instagram.png" alt="instagram">
+          </a>
+
+        </div>
+        <img class="movil" src="./images/movil.png" alt="movil">
       </div>
-      <img class="movil" src="./images/movil.png" alt="movil">
-    </div>
-      
+
       <div>
-        
+
       </div>
 
-      
+
       <p>© Copyright TradingTools</p>
     </div>
   </footer>
 
   <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -61,7 +61,8 @@
         color: $color-texto;
       
         text-decoration: overline underline;
-        text-shadow: 2px 2px 2px $color-sombra-texto;
+        // text-shadow: 2px 2px 2px $color-sombra-texto;
+        @include sombraTexto (2px, 2px, 2px, $color-sombra-texto);
         font-size: 1.1em;
       }
       .texto-patrones { 

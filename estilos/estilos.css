@@ -5,7 +5,7 @@
   box-sizing: border-box; }
 
 body {
-  background: url(../images/pyramid.png); }
+  background: url("../images/pyramid.png"); }
 
 .ancho {
   position: relative;
@@ -101,6 +101,9 @@ nav {
     margin-left: 20px;
     padding: 10px 10px 10px 10px;
     text-align: center; }
+  .noticias h3 {
+    text-decoration: underline;
+    text-decoration-color: #1c3879; }
   .noticias .cuadro {
     border: 1px #fff solid;
     border-radius: 10px;
@@ -146,7 +149,7 @@ nav {
     margin-bottom: 5px;
     font-family: "Crimson Text", serif;
     color: #003865;
-    text-shadow: 2px 2px 2px rgba(224, 219, 219, 0.904); }
+    text-shadow: 2px 2px 2px rgba(224, 219, 219, 0.534); }
   .calendario p {
     text-align: center;
     font-family: "Crimson Text", serif;
@@ -260,12 +263,12 @@ nav {
   color: #003865;
   display: flex;
   justify-content: center;
-  background: url(../images/grafico-forex.png) no-repeat;
+  background: url("../images/grafico-forex.png") no-repeat;
   background-size: cover; }
   .formulario form {
     background-color: #EAE3D2;
     border-radius: 5px; }
-    .formulario form h2 {
+    .formulario form h1 {
       background-color: #607EAA;
       font-size: 18px;
       color: #fff;
