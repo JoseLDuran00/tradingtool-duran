@@ -101,6 +101,10 @@ nav {
     margin-left: 20px;
     padding: 10px 10px 10px 10px;
     text-align: center; }
+  .noticias h3 {
+    text-decoration: underline;
+    text-decoration-color: #1c3879;
+    text-decoration-style: double; }
   .noticias .cuadro {
     border: 1px #fff solid;
     border-radius: 10px;
