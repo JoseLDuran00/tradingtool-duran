@@ -5,7 +5,7 @@
   box-sizing: border-box; }
 
 body {
-  background: url(../images/pyramid.png); }
+  background: url("../images/pyramid.png"); }
 
 .ancho {
   position: relative;
@@ -260,12 +260,12 @@ nav {
   color: #003865;
   display: flex;
   justify-content: center;
-  background: url(../images/grafico-forex.png) no-repeat;
+  background: url("../images/grafico-forex.png") no-repeat;
   background-size: cover; }
   .formulario form {
     background-color: #EAE3D2;
     border-radius: 5px; }
-    .formulario form h2 {
+    .formulario form h1 {
       background-color: #607EAA;
       font-size: 18px;
       color: #fff;

@@ -1,3 +1,14 @@
+/* Media Querys */
+@media screen and (min-width:1025px) and (max-width:2400px) {
+  .container-body {
+    margin: 0 100px;
+  }
+
+  .img {
+    display: flex;
+  }
+}
+
 @media only screen and (max-width:480px){
     .container-body {  display: grid;
       grid-template-columns: 1fr 1fr ;
