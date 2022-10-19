@@ -53,14 +53,13 @@ nav {
   grid-area: img;
   background-color: #DBDFFD; }
   .img .grafico-diario-img {
-    width: 75vw;
-    max-width: 600px;
-    min-width: 320px;
+    width: 700px;
+    text-align: center;
     margin: auto;
     padding: 20px 10px; }
 
 #img-grafico {
-  width: 80%;
+  width: 85%;
   border-radius: 6px;
   box-shadow: 0 3px 5px rgba(15, 15, 15, 0.3); }
 
@@ -156,7 +155,7 @@ nav {
     text-justify: newspaper;
     color: #003865; }
   .calendario .cal-economico {
-    width: 60%;
+    width: 85%;
     height: 80vh;
     box-shadow: 3px 3px 10px #242424; }
 
@@ -376,7 +375,10 @@ footer {
     padding: 15px; }
   .grafico-diario-img {
     width: 60vw;
-    height: 23vh; }
+    text-align: center; }
+  #img-grafico {
+    width: 230px;
+    text-align: center; }
   .noticia-contenedor {
     display: flex;
     justify-content: space-between;
@@ -468,8 +470,6 @@ footer {
     padding: 10px; }
   .grafico-diario-img {
     width: 90vw;
-    max-width: 80%;
-    min-width: 200px;
     margin: auto;
     padding: 20px 10px; }
   /*Página información*/

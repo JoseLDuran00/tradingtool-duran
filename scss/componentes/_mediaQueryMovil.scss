@@ -33,7 +33,13 @@
 
   .grafico-diario-img {
     width: 60vw;
-    height: 23vh;
+    text-align: center;
+    //height: 23vh;
+  }
+
+  #img-grafico{
+    width: 230px;
+    text-align: center;
   }
 
   .noticia-contenedor {
