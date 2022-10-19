@@ -253,6 +253,14 @@ nav {
     margin: 10px;
     color: #003865; }
 
+.btn-subir {
+  padding: 10px;
+  margin: 10px; }
+
+.boton-subir {
+  text-decoration: none;
+  padding: 5px; }
+
 /* --- Fin página información----- */
 /* Página suscribete.html*/
 .formulario {
