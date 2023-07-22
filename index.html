@@ -29,39 +29,10 @@
     <div class="header color-nav">
       <header>
         <!-- NavBar -->
-        <nav class="navbar navbar-expand-lg bg-light">
-          <div class="container-fluid ">
-            <a class="navbar-brand" href="#">
-              <img class="logo" src="./images/logo_100_80-removebg.png" alt="logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarsExample05">
-              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="calendario.html">Calendario</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="graficos.html">Gráfico</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="informacion.html">Información</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="suscribete.html">Suscríbete</a>
-                </li>
-
-              </ul>
-
-            </div>
-          </div>
-
-        </nav>
+        <div id="navBar">
+          
+        </div>
+        
         <!-- Fin Nav Bar -->
       </header>
 
@@ -80,6 +51,10 @@
                 "title": "EUR/USD"
               },
               {
+                "description": "GBPUSD",
+                "proName": "FX:GBPUSD"
+              },
+              {
                 "proName": "BITSTAMP:BTCUSD",
                 "title": "Bitcoin"
               },
@@ -88,7 +63,7 @@
                 "proName": "SKILLING:NASDAQ"
               },
               {
-                "description": "Oro Dollar",
+                "description": "Gold Dollar",
                 "proName": "FOREXCOM:XAUUSD"
               }
             ],
@@ -141,11 +116,11 @@
 
 
     <div class="noticias">
-      <h2> Noticias de la Semana</h2>
+      <h2 class="shadow p-3 mb-5 rounded"> Noticias de la Semana</h2>
 
       <div class="cuadro">
         <a href="https://es.euronews.com/next/2022/10/03/mercados-preciosos#:~:text=3%20oct%20–%20Los%20precios%20del,onza%2C%20a%20las%200852%20GMT." target="_blank">
-          <h3>Precio del oro subió casi un +2%</h3>
+          <h3 class="shadow">Precio del oro subió casi un +2%</h3>
         </a>
 
         <div class="noticia-contenedor">
@@ -167,7 +142,7 @@
 
       <div class="cuadro">
         <a href="https://es.finance.yahoo.com/noticias/petróleo-texas-abre-subida-4-133213316.html">
-          <h3>El petróleo de Texas sube un 5,2 % y cierra en 83,64 dólares.</h3>
+          <h3 class="shadow">El petróleo de Texas sube un 5,2 % y cierra en 83,64 dólares.</h3>
         </a>
 
         <div class="noticia-contenedor">
@@ -185,7 +160,7 @@
 
       <div class="cuadro">
         <a href="https://www.fxstreet.es/news/forex-hoy-sesion-asiatica-los-mercados-comienzan-la-semana-con-optimismo-202210032023" target="_blank">
-          <h3>Sesión asiática: Los Mercados comienzan la semana con optimismo</h3>
+          <h3 class="shadow">Sesión asiática: Los Mercados comienzan la semana con optimismo</h3>
         </a>
 
         <div class="noticia-contenedor">
@@ -232,6 +207,7 @@
 
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -1,25 +1,24 @@
 /* Página suscribete.html*/
 
 .formulario {
-  background-color: #9BA3EB;
   padding: 20px;
   font-family: 'Crimson Text', serif;
   color: $color-texto;
   display: flex;
   justify-content: center;
-  background: url("../images/grafico-forex.png") no-repeat;
-  background-size: cover;
-
+  background: url("../images/stardust.png");
+  object-fit: cover;
+ 
   form {
-    background-color: #EAE3D2;
+    background-color: $color-fondo;
     border-radius: 5px;
 
     h1 {
       background-color: #607EAA;
-      font-size: 18px;
+      font-size: 20px;
+      text-align: center;
       color: #fff;
       padding: 10px;
-      /* margin: 10px; */
       border-radius: 5px;
       justify-content: center;
     }
