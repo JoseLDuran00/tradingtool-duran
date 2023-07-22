@@ -15,7 +15,6 @@
       border: $color-texto 1px solid;
       margin: 5px;
       border-radius: 10px;
-      
       background: url(../images/imagen-fondo.png) no-repeat;
       background-size: cover;
   }
@@ -67,28 +66,27 @@
       }
       .texto-patrones { 
         grid-area: texto; 
-        background-color:  $color-fondo;
+        // background-color:  $color-fondo;
         box-shadow: 5px 5px 10px $color-sombra-caja;
         padding: 10px;
         margin: 10px;
         color : $color-texto;
+        background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255, 0));
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+  border: 1px solid rgba(255,255,255, 0.18);
+  border-radius : 10px;
       }
-
-      
     
   }
     .btn-subir{
       padding: 10px;
       margin: 10px;
-
     }
 
   .boton-subir{
     text-decoration: none;
-    padding: 5px;
-    
+    padding: 5px; 
   }
-
-  
-
   /* --- Fin página información----- */

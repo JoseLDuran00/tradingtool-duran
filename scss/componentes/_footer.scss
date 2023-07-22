@@ -3,8 +3,9 @@ inicio Footer */
 
 footer {
   padding: 10px 30px;
-  background-image: url("../images/gutter.gif");
+  background-image: url("../images/carbon_fibre.webp");
   border-radius: 2px;
+  color: #fffbe6c0;
 
   p {
     text-align: center;
@@ -23,9 +24,10 @@ footer {
       border-radius: 5px;
 
       &:hover {
-        -webkit-box-shadow: 0 0 5px 3px rgba(100,111,212,1);
-        -moz-box-shadow: 0 0 5px 3px rgba(100,111,212,1);
-        box-shadow: 0 0 5px 3px rgba(100,111,212,1);
+        transition: all 0.3s ease;
+        -webkit-box-shadow: 0 0 3px 2px rgba(100,111,212,1);
+        -moz-box-shadow: 0 0 3px 2px rgba(100,111,212,1);
+        box-shadow: 0 0 3px 2px rgba(100,111,212,1);
       }
     }
   }

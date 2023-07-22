@@ -5,7 +5,7 @@
   box-sizing: border-box; }
 
 body {
-  background: url("../images/pyramid.png"); }
+  background: url("../images/denim.webp"); }
 
 .ancho {
   position: relative;
@@ -17,6 +17,31 @@ body {
 .color-nav {
   background-color: #F9F5EB;
   box-shadow: 0 1px #1c3879; }
+
+.logo {
+  width: 100px;
+  padding: 8px;
+  border-radius: 10% / 50%;
+  background-color: #f5f5f5e8;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(242, 234, 211, 0.7);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(242, 234, 211, 0.7);
+  box-shadow: 0px 0px 10px 0px rgba(242, 234, 211, 0.7); }
+
+.navbar {
+  background-image: url("../images/luxury_header-1920w.webp"); }
+
+.navbar-nav {
+  padding: 10px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 10px; }
+
+.nav-link:hover {
+  background-color: #282F44;
+  transition: all 1s ease; }
 
 nav {
   padding: 1rem;
@@ -34,7 +59,7 @@ nav {
         background-color: #94b2e0;
         color: white;
         border-radius: 10px;
-        text-shadow: 2px 2px 2px rgba(224, 219, 219, 0.534); }
+        text-shadow: 1px 1px 1px rgba(224, 219, 219, 0.534); }
 
 /*-- Fin Menu Navegacion ---*/
 /*----- estilos index. html -----*/
@@ -51,7 +76,7 @@ nav {
 
 .img {
   grid-area: img;
-  background-color: #DBDFFD; }
+  background-color: #27374da7; }
   .img .grafico-diario-img {
     width: 700px;
     text-align: center;
@@ -66,7 +91,8 @@ nav {
 .titulo-img {
   grid-area: titulo-img;
   padding-top: 15px;
-  background-color: #DBDFFD;
+  background-color: #27374da7;
+  color: #fff7cc;
   padding-left: 15px;
   display: flex;
   align-content: center;
@@ -77,13 +103,13 @@ nav {
   grid-area: texto; }
   .texto .grafico-diario-text {
     font-family: "Crimson Text", serif;
-    color: #003865;
+    color: #DDE6ED;
     padding: 20px;
     margin-bottom: 2px;
     font-size: 1.1rem; }
 
 .grafico-diario {
-  background-color: #DBDFFD;
+  background-color: #27374da7;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -92,14 +118,15 @@ nav {
 
 .noticias {
   grid-area: noticias;
-  background-color: #9BA3EB;
+  background-color: #526d82b9;
   padding: 10px; }
   .noticias h2, .noticias h3 {
-    font-family: "Crimson Text", serif;
-    color: #003865;
+    font-family: "Montserrat", sans-serif;
+    color: #DDE6ED;
     margin-left: 20px;
     padding: 10px;
-    text-align: center; }
+    text-align: center;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.6); }
   .noticias h3 {
     text-decoration: underline;
     text-decoration-color: #1c3879; }
@@ -108,7 +135,7 @@ nav {
     border-radius: 10px;
     margin: 15px;
     padding: 5px;
-    color: #003865;
+    color: #DDE6ED;
     box-shadow: 3px 3px 10px #242424; }
     .noticias .cuadro .noticia-contenedor {
       display: flex;
@@ -124,7 +151,7 @@ nav {
           width: 150px;
           height: 100px;
           border-radius: 5px;
-          border: 1px solid #DBDFFD; }
+          border: 1px solid #27374da7; }
       .noticias .cuadro .noticia-contenedor .noticias-texto {
         display: flex;
         flex-direction: row;
@@ -141,19 +168,19 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #DBDFFD;
+  background-color: #27374da7;
   padding-bottom: 15px; }
   .calendario h1 {
     padding: 20px;
     margin-bottom: 5px;
     font-family: "Crimson Text", serif;
-    color: #003865;
+    color: #DDE6ED;
     text-shadow: 2px 2px 2px rgba(224, 219, 219, 0.534); }
   .calendario p {
     text-align: center;
     font-family: "Crimson Text", serif;
     text-justify: newspaper;
-    color: #003865; }
+    color: #DDE6ED; }
   .calendario .cal-economico {
     width: 85%;
     height: 80vh;
@@ -161,8 +188,7 @@ nav {
 
 .tradingview-widget-container {
   background-color: #242424;
-  padding: 10px;
-  border-radius: 5px; }
+  padding: 10px; }
 
 /* -- Fin Página Calendario -- */
 /*Página graficos.html*/
@@ -174,14 +200,14 @@ nav {
   gap: 0 0;
   grid-auto-flow: row;
   grid-template-areas: "grafico-titulo grafico-titulo grafico-titulo grafico-titulo" "... area-grafico area-grafico ..." "... area-grafico area-grafico ..." ". . . .";
-  background-color: #DBDFFD; }
+  background-color: #27374da7; }
 
 .grafico-titulo {
   grid-area: grafico-titulo;
   padding: 20px;
   margin-bottom: 5px;
   font-family: "Crimson Text", serif;
-  color: #003865;
+  color: #DDE6ED;
   display: flex;
   align-items: center;
   justify-content: space-around; }
@@ -203,14 +229,14 @@ nav {
   align-content: center;
   align-items: center;
   justify-items: center;
-  border: #003865 1px solid;
+  border: #DDE6ED 1px solid;
   margin: 5px;
   border-radius: 10px;
   background: url(../images/imagen-fondo.png) no-repeat;
   background-size: cover; }
 
 .patrones {
-  background-color: #DBDFFD;
+  background-color: #27374da7;
   display: flex;
   flex-direction: column;
   align-content: stretch;
@@ -218,14 +244,14 @@ nav {
   align-items: center; }
   .patrones .patrones-titulo {
     font-family: "Crimson Text", serif;
-    color: #003865;
+    color: #DDE6ED;
     padding: 20px; }
 
 #patrones-graficos {
   padding: 10px; }
   #patrones-graficos h3 {
     font-family: "Crimson Text", serif;
-    color: #003865;
+    color: #DDE6ED;
     padding: 20px; }
   #patrones-graficos .patrones-img {
     grid-area: img;
@@ -241,17 +267,22 @@ nav {
   #patrones-graficos .subtitulo-patrones {
     grid-area: titulo;
     font-family: "Crimson Text", serif;
-    color: #003865;
+    color: #DDE6ED;
     text-decoration: overline underline;
     text-shadow: 2px 2px 2px rgba(224, 219, 219, 0.534);
     font-size: 1.1em; }
   #patrones-graficos .texto-patrones {
     grid-area: texto;
-    background-color: #DBDFFD;
     box-shadow: 5px 5px 10px #242424;
     padding: 10px;
     margin: 10px;
-    color: #003865; }
+    color: #DDE6ED;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 10px; }
 
 .btn-subir {
   padding: 10px;
@@ -264,23 +295,22 @@ nav {
 /* --- Fin página información----- */
 /* Página suscribete.html*/
 .formulario {
-  background-color: #9BA3EB;
   padding: 20px;
   font-family: 'Crimson Text', serif;
-  color: #003865;
+  color: #DDE6ED;
   display: flex;
   justify-content: center;
-  background: url("../images/grafico-forex.png") no-repeat;
-  background-size: cover; }
+  background: url("../images/stardust.png");
+  object-fit: cover; }
   .formulario form {
-    background-color: #EAE3D2;
+    background-color: #27374da7;
     border-radius: 5px; }
     .formulario form h1 {
       background-color: #607EAA;
-      font-size: 18px;
+      font-size: 20px;
+      text-align: center;
       color: #fff;
       padding: 10px;
-      /* margin: 10px; */
       border-radius: 5px;
       justify-content: center; }
     .formulario form label {
@@ -329,8 +359,9 @@ nav {
 inicio Footer */
 footer {
   padding: 10px 30px;
-  background-image: url("../images/gutter.gif");
-  border-radius: 2px; }
+  background-image: url("../images/carbon_fibre.webp");
+  border-radius: 2px;
+  color: #fffbe6c0; }
   footer p {
     text-align: center;
     font-family: 'Crimson Text', serif; }
@@ -344,9 +375,10 @@ footer {
       margin: 10px;
       border-radius: 5px; }
       footer .contenedor .social-logo:hover {
-        -webkit-box-shadow: 0 0 5px 3px #646fd4;
-        -moz-box-shadow: 0 0 5px 3px #646fd4;
-        box-shadow: 0 0 5px 3px #646fd4; }
+        transition: all 0.3s ease;
+        -webkit-box-shadow: 0 0 3px 2px #646fd4;
+        -moz-box-shadow: 0 0 3px 2px #646fd4;
+        box-shadow: 0 0 3px 2px #646fd4; }
   footer .movil {
     width: 40px;
     transform: rotate(40deg);
@@ -396,7 +428,7 @@ footer {
     width: 120px;
     height: 100px;
     border-radius: 5px;
-    border: 1px solid #DBDFFD; }
+    border: 1px solid #27374da7; }
   /*pagina calendario*/
   .cal-economico {
     width: 90%;
@@ -410,7 +442,7 @@ footer {
     gap: 0 0;
     grid-auto-flow: row;
     grid-template-areas: "grafico-titulo grafico-titulo " " area-grafico area-grafico " " area-grafico area-grafico " ". . ";
-    background-color: #DBDFFD; }
+    background-color: #27374da7; }
   .area-grafico {
     margin: 0 10px; }
   /*Página información*/
@@ -423,14 +455,14 @@ footer {
     grid-template-areas: "titulo titulo" "img img" "texto texto";
     align-content: space-around;
     align-items: center;
-    border: #003865 1px solid;
+    border: #DDE6ED 1px solid;
     margin: 5px;
     border-radius: 5px;
     justify-items: center; }
   .patrones-titulo {
     grid-area: titulo1;
     font-family: "Crimson Text", serif;
-    color: #003865;
+    color: #DDE6ED;
     padding: 20px; }
   .patrones-img {
     width: 300px;
@@ -490,7 +522,7 @@ footer {
     grid-template-areas: "titulo titulo" "img img" "texto texto";
     align-content: space-around;
     align-items: center;
-    border: #003865 1px solid;
+    border: #DDE6ED 1px solid;
     margin: 5px;
     border-radius: 5px;
     justify-items: center; }
